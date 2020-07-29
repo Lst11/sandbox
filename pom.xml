@@ -10,4 +10,39 @@
     <description>Java Backend</description>
     <version>0.0.1-SNAPSHOT</version>
 
+    <properties>
+        <java.version>11</java.version>
+        <maven.checkstyle.plugin.version>3.1.0</maven.checkstyle.plugin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>${maven.checkstyle.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <configLocation>${project.basedir}/conf/checkstyle.xml</configLocation>
+                    <suppressionsLocation>${project.basedir}/conf/checkstyle-suppressions.xml</suppressionsLocation>
+                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    <failOnViolation>true</failOnViolation>
+                    <failsOnError>true</failsOnError>
+                    <consoleOutput>true</consoleOutput>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
