@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author alena.stanisheuskaya
  */
+//CHECKSTYLE:OFF
 @SpringBootApplication
 public class SandboxApplication {
 
@@ -15,3 +16,4 @@ public class SandboxApplication {
         SpringApplication.run(com.aws.sandbox.SandboxApplication.class, args);
     }
 }
+//CHECKSTYLE:ON
