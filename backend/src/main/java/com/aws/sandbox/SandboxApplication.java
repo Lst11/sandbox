@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author alena.stanisheuskaya
  */
+
 @SpringBootApplication
 public class SandboxApplication {
 
