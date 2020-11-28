@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SandboxApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(com.aws.sandbox.SandboxApplication.class, args);
+        SpringApplication.run(SandboxApplication.class, args);
     }
 }
 //CHECKSTYLE:ON

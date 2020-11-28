@@ -12,14 +12,15 @@ cmake-build-*/
 
 # IntelliJ
 out/
-target/
+backend/target/
 .idea/
-# CDT-specific (C/C++ Development Tooling)
+# CDT-specific (C/C++ Development Tooling)k
 .cproject
 .classpath
 /sdk/
 /tools/
 *.iml
+.log
 
 # JIRA plugin
 atlassian-ide-plugin.xml
